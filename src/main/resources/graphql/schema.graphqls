@@ -1,0 +1,16 @@
+# 도서 데이터 타입 정의
+type Book {
+    id: ID!
+    title: String!
+    author: String!
+    pages: Int
+}
+
+# 클라이언트가 요청할 수 있는 진입점 (Query)
+type Query {
+    # 특정 ID로 도서를 조회
+    bookById(id: ID!): Book
+
+    # 모든 도서 목록을 조회
+    allBooks: [Book]!
+}

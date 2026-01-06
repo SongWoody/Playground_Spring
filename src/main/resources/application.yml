@@ -1,2 +1,8 @@
 server:
   port: 8181
+
+spring:
+  graphql:
+    graphiql:
+      enabled: true  # 웹에서 테스트 도구 사용
+      path: /graphiql # 접속 경로 (기본값)
